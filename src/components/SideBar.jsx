@@ -1,10 +1,38 @@
 import React from "react";
-
+import "./SideBar.css";
+import * as BootComp from "react-bootstrap";
 
 function SideBar() {
   return (
     <>
-      <div class="flex-shrink-0 p-3 bg-white" >
+      {/* <!-- Side navigation --> */}
+      <div class="sidenav">
+
+        <BootComp.Accordion defaultActiveKey="0" className="acordion">
+          <BootComp.Accordion.Item eventKey="0" className="dark"> 
+            <BootComp.Accordion.Header>Header 1</BootComp.Accordion.Header>
+            <BootComp.Accordion.Body className="dark">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Similique ad placeat facere, accusantium molestias tenetur porro
+              sunt recusandae quibusdam ipsam aspernatur quam officiis, facilis
+              atque consequuntur, nisi delectus et in.
+            </BootComp.Accordion.Body>
+          </BootComp.Accordion.Item>
+          <BootComp.Accordion.Item eventKey="1">
+            <BootComp.Accordion.Header>Header 1</BootComp.Accordion.Header>
+            <BootComp.Accordion.Body>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Similique ad placeat facere, accusantium molestias tenetur porro
+              sunt recusandae quibusdam ipsam aspernatur quam officiis, facilis
+              atque consequuntur, nisi delectus et in.
+            </BootComp.Accordion.Body>
+          </BootComp.Accordion.Item>
+        </BootComp.Accordion>
+      </div>
+
+      {/* <!-- Page content --> */}
+
+      {/* <div class="flex-shrink-0 p-3 bg-white" >
         <a
           href="/"
           class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom"
@@ -145,7 +173,7 @@ function SideBar() {
             </div>
           </li>
         </ul>
-      </div>
+      </div> */}
     </>
   );
 }

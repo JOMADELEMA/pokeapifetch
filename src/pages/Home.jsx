@@ -11,11 +11,10 @@ function home() {
 
       <BootComp.Container fluid className="pt-5">
         <BootComp.Row>
-          <BootComp.Col lg="3">
+          <BootComp.Col lg="3" className="columna-sidebar gx-0">
             <SideBar />
           </BootComp.Col>
-
-          <BootComp.Col>
+          <BootComp.Col lg="9" className="columna-datos">
             <Separador titulo="Titulo 1" />
             <div className="">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore,
