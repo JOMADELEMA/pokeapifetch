@@ -4,7 +4,8 @@ import * as BootComp from "react-bootstrap";
 function NavBar() {
   return (
     <>
-      <BootComp.Navbar bg="dark" variant="dark" expand="lg" fixed="top">
+      <BootComp.Navbar bg="dark" variant="dark" expand="lg" fixed="top" className="border-bottom">
+      
         <BootComp.Container>
           <BootComp.Navbar.Brand href="#home">
             Poke API Fetch
